@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 20% 98%;
+  --foreground: 222 47% 11%;
+  --surface: 0 0% 100%;
+  --surface-hover: 210 20% 96%;
+  --muted: 210 16% 93%;
+  --muted-foreground: 215 16% 47%;
+  --border: 214 15% 91%;
+}
+
+.dark {
+  --background: 222 47% 6%;
+  --foreground: 210 20% 96%;
+  --surface: 222 40% 9%;
+  --surface-hover: 222 35% 13%;
+  --muted: 222 30% 14%;
+  --muted-foreground: 215 16% 65%;
+  --border: 222 25% 18%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+/* smooth scroll + nicer default focus ring */
+:focus-visible {
+  outline: 2px solid #22C55E;
+  outline-offset: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
