@@ -1,6 +1,5 @@
 import {
   Activity,
-  ArrowDownRight,
   ArrowRight,
   ArrowUpRight,
   CalendarDays,
